@@ -19,7 +19,7 @@
     outline: none;
     border: none;
     text-decoration: none;
-    transition: all .2s linear;
+    /* transition: all .2s linear; */
 
 }
 
@@ -80,13 +80,13 @@ section{
 }
 
 .header .navbar #close-navbar{
-    /* position: absolute;
+    position: absolute;
     top: 1.5rem;
     right: 2rem;
     font-size: 4rem;
     cursor: pointer;
-    color: var(--black); */
-    display: block;
+    color: var(--black);
+    display: grid;
 }
 
 .header .navbar a{
@@ -266,7 +266,7 @@ display: none;
     border-radius: 10px; /* Optional: Abgerundete Ecken für das Bild */
 }
 
-/* Bloghs */
+/* Blogs */
 
 .blogs .box-container{
     display: grid;
@@ -400,40 +400,45 @@ display: none;
 }
 
 
+ /* Kontakt  */
+
 .kontakt {
     max-width: 1200px; /* Optional: Begrenzt die Breite der Sektion */
     margin: 0 auto; /* Zentriert die Sektion horizontal */
 }
 
-.kontakt.box-container {
+.kontakt .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
+    gap: 3rem;
+    -webkit-text-size-adjust: auto;
 }
 
-.kontakt.box-container > * {
+.kontakt .box-container > * {
     border: var(--border);
-    text-align: center;
+    text-align: left;
     padding: 3rem 2rem;
     position: relative;
+    line-height: 2.5rem;
 }
 
-.kontakt.box-container > * h3 {
-    font-size: 2rem;
+.kontakt .box-container > * h3 {
     color: var(--black);
     padding: 1rem 0;
     text-transform: capitalize;
-}
-
-.kontakt.box-container > * table {
     text-align: center;
 }
 
-@media (max-width: 600px) {
-    .kontakt.box-container {
-         grid-template-columns: 1fr; /* Bei kleinerem Bildschirmbild werden die Elemente in einer Spalte angezeigt */
-     }
- }
+.kontakt .box-container .box td{
+    table-layout: fixed;
+    padding-left: 40px;
+}
+
+.kontakt .box-container .box{
+    font-size: 2rem;
+}
+
+
 
  .logo {
     display: flex;
