@@ -1,68 +1,303 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equive="X-UA-Compatible" content="IE=edge";>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nails By Rana</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Nails By Rana</h1>
-        <nav>
-            <ul>
-                <li><a href="#kontakt">Kontakt</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Soziale Medien</a>
-                    <div class="dropdown-content">
-                        <a href="https://www.instagram.com/nails_byrana/" target="_blank">Instagram</a>
-                        <a href="" target="_blank">TikTok</a>
-                        <a href="https://www.pinterest.com/nailsbyrana/" target="_blank">Pinterest</a>
-                    </div>
-                </li>
-                <li><a href="#presiliste">Presiliste</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#services">Services</a></li>
-                <!-- Füge weitere Links nach Bedarf hinzu -->
-            </ul>
+    <section class="header">
+        <a href="#" class="logo">
+            <img src="" alt="" class="logo-image">
+            Nails By Rana
+        </a>
+
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+
+            <a href="#home">Startseite</a>
+            <a href="#about">Über uns</a>
+            <a href="#services">Dienstleistungen</a>
+            <a href="#pricing">Preisliste</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#review">Review</a> 
+            <a href="#kontakt">Kontakt</a>
+            
+    
         </nav>
-    </header>
-    <main>
-        <section class="content">
-            <div class="instagram-post">
-                <iframe src="https://www.instagram.com/reel/C33SLPUrXI4/embed/"
-                        frameborder="0"
-                        style="width: 100%; height: 800px;"
-                        scrolling="no"
-                        allowtransparency="true"
-                        allowfullscreen="true"
-                ></iframe>
-            </div>
-            <div class="contact-info">
-                <h2>Kontaktinformationen</h2>
-                <p>Adresse: <a href="https://www.google.com/maps/search/?api=1&query=Wilhelmsh%C3%B6he+Allee+180%2C+34119+Kassel" target="_blank">Wilhelmshöhe Allee 180, 34119 Kassel</a></p>
-                <p>Telefonnummer: <a href="https://api.whatsapp.com/send?phone=491723211519">01723211519</a></p>
-                <h3>Öffnungszeiten</h3>
-                <table>
-                    <tr>
-                        <th>Tag</th>
-                        <th>Zeit</th>
-                    </tr>
-                    <tr>
-                        <td>Mo-Sa</td>
-                        <td>09:00 - 15:00</td>
-                    </tr>
-                    <tr>
-                        <td>Sonntag</td>
-                        <td>Geschlossen</td>
-                    </tr>
-                </table>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+    
+<!--home-->
+        <section class="home" id="home">   
+            <div class="content">   
+                <span>Willkommen</span>
+                <h3>wir machen<br> Nägel schön <br> und einzigartig    </h3>
             </div>
         </section>
-    </main>
-    <footer>
-        <p>Termin nach Vereinbarung: <a href="https://api.whatsapp.com/send?phone=491723211519">WhatsApp</a></p>
+
+<!--Über uns-->
+
+<section class="about" id="about">   
+    <h1 class="heading">Über uns</h1> 
+    
+    <div class="row">
+        <div class="image">   
+            <img src="images/aboutUsRana.jpeg" alt="">
+        </div>
+
+        <div class="content">
+            <h3 class="title">Rana – Ihre Expertin für Nageldesign</h3>
+            <p>ich bin Rana und seit mehr als zehn Jahren leidenschaftlich im Bereich Nageldesign tätig. Was als Hobby begann, hat sich zu einer professionellen Karriere entwickelt, die mir unendlich viel Freude bereitet. Meine Arbeit ist nicht nur ein Job, sondern eine echte Berufung, und ich liebe es, meine Kreativität und mein Können in jedem einzelnen Design auszudrücken.</p>
+            <p>Jeder Nagel ist für mich eine Leinwand, auf der ich meine künstlerische Vision umsetze. Ich sehe jedes Design als eine einzigartige Kreation, die die Persönlichkeit und den Stil meiner Kundinnen und Kunden widerspiegelt. Von klassisch-elegant bis hin zu extravagant und auffällig – meine Mission ist es, für jede Person das perfekte Nageldesign zu finden. Dabei lege ich großen Wert auf Qualität und Präzision, um Ergebnisse zu erzielen, die nicht nur schön aussehen, sondern auch lange halten.</p>
+            <p>Abseits meiner beruflichen Tätigkeit bin ich eine begeisterte Kunstliebhaberin und reise gerne, um neue Inspirationen zu sammeln. Jede Reise und jede neue Begegnung bereichern meine Arbeit und fließen in meine Designs ein. Ich freue mich darauf, auch Ihnen meine Leidenschaft und Kreativität im Nageldesign näherzubringen und Sie in meinem Studio willkommen zu heißen.</p>
+
+            <div class="icon-container">
+
+                <div class="icons">   
+                    <img src="images/NailCare.png" alt="">
+                    <h3>Pflege</h3>
+                </div>
+                <div class="icons">   
+                    <img src="images/NailRepair.png" alt="">
+                    <h3>Reparatur</h3>
+                </div>
+                <div class="icons">   
+                    <img src="images/NailDesign.png" alt="">
+                    <h3>Design</h3>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Dienstleistungen-->
+
+<section class="services" id="services">
+
+<h1 class="heading">services</h1>
+
+<div class="box-container">
+    <div class="box">
+        <img src="images/ServiceManicure.png" alt="">
+        <div class="content">
+            <h3>Maniküre</h3>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="images/ServicePedicure.png" alt="">
+        <div class="content">
+            <h3>Pediküre</h3>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="images/ServiceGel.png" alt="">
+        <div class="content">
+            <h3>Gel</h3>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="images/ServiceDesign.png" alt="">
+        <div class="content">
+            <h3>Design</h3>
+        </div>
+    </div>
+</div>
+
+</section>
+ 
+<!--Pricing-->
+
+<section class="pricing" id="pricing">
+
+    <!-- <div class="box-container"> -->
+        <div class="box"> 
+            <img src="images/PriceList.jpeg" alt="">
+        </div>
+    <!-- </div> -->
+</section>
+
+
+<!--Blogs-->
+
+<section class="blogs" id="blogs">
+    <h1 class="heading">Blogs</h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="images/FirstDay.jpeg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Eröffnung meines Nagelstudios – Ein herzliches Dankeschön</a>
+                <span>By Rana/ 06.01.2024</span>
+                <p>Am 6. Januar 2024 durfte ich endlich die Türen meines eigenen Nagelstudios öffnen und diesen besonderen Moment mit vielen wunderbaren Menschen teilen. Ich möchte mich herzlich bei allen bedanken, die an diesem Tag dabei waren und ihn durch ihre Anwesenheit, die vielen Blumen und Geschenke so unvergesslich gemacht haben.</p>
+                <p>Ein besonderer Dank gilt meinen treuen Kundinnen, Freunden und Familie, deren Unterstützung mir geholfen hat, meinen Traum zu verwirklichen. Eure kontinuierliche Unterstützung und euer Vertrauen sind die Grundlage meines Erfolgs. Ich freue mich darauf, euch in meinem Studio willkommen zu heißen und gemeinsam viele schöne Momente zu erleben.</p>
+                <p>Rana</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/FirstDay.jpeg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Eröffnung meines Nagelstudios – Ein herzliches Dankeschön</a>
+                <span>By Rana/ 06.01.2024</span>
+                <p>Am 6. Januar 2024 durfte ich endlich die Türen meines eigenen Nagelstudios öffnen und diesen besonderen Moment mit vielen wunderbaren Menschen teilen. Ich möchte mich herzlich bei allen bedanken, die an diesem Tag dabei waren und ihn durch ihre Anwesenheit, die vielen Blumen und Geschenke so unvergesslich gemacht haben.</p>
+                <p>Ein besonderer Dank gilt meinen treuen Kundinnen, Freunden und Familie, deren Unterstützung mir geholfen hat, meinen Traum zu verwirklichen. Eure kontinuierliche Unterstützung und euer Vertrauen sind die Grundlage meines Erfolgs. Ich freue mich darauf, euch in meinem Studio willkommen zu heißen und gemeinsam viele schöne Momente zu erleben.</p>
+                <p>Rana</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/FirstDay.jpeg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Eröffnung meines Nagelstudios – Ein herzliches Dankeschön</a>
+                <span>By Rana/ 06.01.2024</span>
+                <p>Am 6. Januar 2024 durfte ich endlich die Türen meines eigenen Nagelstudios öffnen und diesen besonderen Moment mit vielen wunderbaren Menschen teilen. Ich möchte mich herzlich bei allen bedanken, die an diesem Tag dabei waren und ihn durch ihre Anwesenheit, die vielen Blumen und Geschenke so unvergesslich gemacht haben.</p>
+                <p>Ein besonderer Dank gilt meinen treuen Kundinnen, Freunden und Familie, deren Unterstützung mir geholfen hat, meinen Traum zu verwirklichen. Eure kontinuierliche Unterstützung und euer Vertrauen sind die Grundlage meines Erfolgs. Ich freue mich darauf, euch in meinem Studio willkommen zu heißen und gemeinsam viele schöne Momente zu erleben.</p>
+                <p>Rana</p>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+<!--Review-->
+
+<section class="review" id="review">
+
+    <h1 class="heading">Reviews</h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/Quote.png" alt="" class="quote">
+            <p>Ich war Kundin bei der lieben Rana bevor sie sich selbstständig gemacht hat und ich war immer mega zufrieden. Jetzt hat sie ihr hübsches kleines eigenes Studio 💯
+                Sie ist auch ein ganz besonders lieber Mensch und ihre Fähigkeiten sind einfach super Klasse 👍🏼👍🏼💖💖</p>
+            <img src="images/Reviewer.png" alt="Erika Rotärmel" class="reviewer">
+            <h3>Erika Rotärmel</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/Quote.png" alt="" class="quote">
+            <p>Rana ist die allerbeste. Sie arbeitet mit unendlich viel Leidenschaft und Liebe zum Detail.
+                . Ich bin sehr glücklich, das ich Sie gefunden  habe!Immer nur Rana. Sie macht die wunderschönsten Nägel.</p>
+            <img src="images/Reviewer.png" alt="Silke Bussang" class="reviewer">
+            <h3>Silke Bussang</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/Quote.png" alt="" class="quote">
+            <p>Ich bin von Rana menschlich, aber vor allem beruflich, sehr begeistert. Sie weiß immer genau, wie ich meine Nägel haben möchte, und ich bin immer zu 100% zufrieden👍deshalb bin ich auch schon ein paar Mal mit ihr 'umgezogen". Aber mit ihrem tollen, eigenen Laden hat sie sich jetzt ihren Traum erfüllt. Super!!! Total empfehlenswert💕 </p>
+            <img src="images/Reviewer.png" alt="Sandra Hellmuth" class="reviewer">
+            <h3>Sandra Hellmuth</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="kontakt" id="kontakt">
+<section class="box-container">
+    <div class="box">
+        <h2>Nails By Rana</h2>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=Wilhelmsh%C3%B6he+Allee+180%2C+34119+Kassel" target="_blank">Wilhelmshöhe Allee 180, <br>34119 Kassel</a></p>
+        <p>Telefonnummer: <a href="https://api.whatsapp.com/send?phone=491723211519">+49 172 321 15 19</a></p>
         <p>E-Mail: <a href="mailto:info@nailsbyrana.de">info@nailsbyrana.de</a></p>
-    </footer>
+    </div>
+
+    <div class="box">
+        <h3>Öffnungszeiten</h3>
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Zeit</th>
+            </tr>
+            <tr>
+                <td>Montag</td>
+                <td>geschlossen</td>
+            </tr>
+            <tr>
+                <td>Dienstag</td>
+                <td>09:00 - 15:00</td>
+            </tr>
+            <tr>
+                <td>Mittwoch</td>
+                <td>09:00 - 15:00</td>
+            </tr>
+            <tr>
+                <td>Donnerstag</td>
+                <td>09:00 - 15:00</td>
+            </tr>
+            <tr>
+                <td>Freitag</td>
+                <td>09:00 - 15:00</td>
+            </tr>
+            <tr>
+                <td>Samstag</td>
+                <td>09:00 - 15:00</td>
+            </tr>
+            <tr>
+                <td>Sonntag</td>
+                <td>geschlossen</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="box">
+        <h3>Navigation</h3><br>
+            <a href="#home">Startseite</a><br>
+            <a href="#about">Über uns</a><br>
+            <a href="#services">Dienstleistungen</a><br>
+            <a href="#pricing">Preisliste</a><br>
+            <a href="#blogs">Blogs</a><br>
+            <a href="#review">Review</a>
+    </div>
+</section>
+</section>
+
+<section class="map">
+    <div class="box" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4987.878803486815!2d9.455717875640886!3d51.312239184448345!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bb3fe8b6530873%3A0x586803d21029ce8f!2sNails%20by%20Rana!5e0!3m2!1sde!2sde!4v1718136110116!5m2!1sde!2sde"" frameborder="0"></iframe>
+    </div>
+</section>
+
+
+
+    <script src="js/script.js"></script>
 </body>
 </html>
