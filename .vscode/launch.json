@@ -1,28 +1,22 @@
 {
-  // Use IntelliSense to learn about possible attributes.
-  // Hover to view descriptions of existing attributes.
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch Edge",
+      "name": "Launch Firefox",
+      "type": "firefox",
       "request": "launch",
-      "type": "msedge",
       "url": "http://localhost:8080",
-      "webRoot": "${workspaceFolder}"
-    },
-    {
-      "name": "Python Debugger: Current File",
-      "type": "debugpy",
-      "request": "launch",
-      "program": "${file}",
-      "console": "integratedTerminal"
-    },
-    {
-      "type": "msedge",
-      "request": "launch",
-      "name": "Open index.html",
-      "file": "c:\\Users\\smort\\OneDrive\\Dokumente\\GitHub\\NailsByRana\\index.html"
+      "webRoot": "${workspaceFolder}",
+      "firefoxExecutable": "/usr/bin/firefox",
+      "reAttach": true,
+      "pathMappings": [
+        {
+          "url": "webpack:///src/",
+          "path": "${workspaceFolder}/src"
+        }
+      ],
+      "keepProfileChanges": true,
+      "profileDir": "/path/to/your/firefox/profile" // Hier den Pfad zum Profilverzeichnis angeben
     }
   ]
 }

@@ -21,7 +21,7 @@
 
             <a href="#home">Startseite</a>
             <a href="#about">Über uns</a>
-            <a href="#services">Dienstleistungen</a>
+            <!-- <a href="#services">Dienstleistungen</a> -->
             <a href="#pricing">Preisliste</a>
             <a href="#blogs">Blogs</a>
             <a href="#review">Reviews</a> 
@@ -80,40 +80,24 @@
 
 <!-- Dienstleistungen-->
 
-<section class="services" id="services">
-
-<h1 class="heading">services</h1>
-
-<div class="box-container">
-    <div class="box">
-        <img src="images/ServiceManicure.jpeg" alt="">
-        <div class="content">
-            <h3>Maniküre</h3>
+<section class="services">
+    <div class="carousel">
+        <button class="carousel-control prev" onclick="moveCarousel(-1)">‹</button>
+        <div class="box-container carousel-container">
+            <div class="carousel-track">
+                <!-- Hier die 8 Fotos einfügen -->
+                <div class="box"><img src="foto1.jpg" alt="Foto 1"></div>
+                <div class="box"><img src="foto2.jpg" alt="Foto 2"></div>
+                <div class="box"><img src="foto3.jpg" alt="Foto 3"></div>
+                <div class="box"><img src="foto4.jpg" alt="Foto 4"></div>
+                <div class="box"><img src="foto5.jpg" alt="Foto 5"></div>
+                <div class="box"><img src="foto6.jpg" alt="Foto 6"></div>
+                <div class="box"><img src="foto7.jpg" alt="Foto 7"></div>
+                <div class="box"><img src="foto8.jpg" alt="Foto 8"></div>
+            </div>
         </div>
+        <button class="carousel-control next" onclick="moveCarousel(1)">›</button>
     </div>
-
-    <div class="box">
-        <img src="images/ServicePedicure.jpeg" alt="">
-        <div class="content">
-            <h3>Pediküre</h3>
-        </div>
-    </div>
-
-    <div class="box">
-        <img src="images/ServiceGel.jpeg" alt="">
-        <div class="content">
-            <h3>Gel</h3>
-        </div>
-    </div>
-
-    <div class="box">
-        <img src="images/ServiceDesign.jpeg" alt="">
-        <div class="content">
-            <h3>Design</h3>
-        </div>
-    </div>
-</div>
-
 </section>
  
 <!--Pricing-->
