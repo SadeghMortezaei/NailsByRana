@@ -1,0 +1,63 @@
+:root {
+    --primary-color: #ffffff; /* Hintergrundfarbe */
+    --secondary-color: #cfc5bb; /* Dunklerer Beigeton */
+    --danger-color: #d8b2b2; /* Gefahrenfarbe */
+    --light-color: #f9f9f9; /* Helle Farbe */
+    --dark-color: #5a4e42; /* Dunkles Braun */
+    --font-color: #3c3c3c; /* Schriftfarbe */
+}
+
+h3 {
+    margin-bottom: 10px; /* Fügt einen Abstand unter der Überschrift hinzu */
+}
+p {
+    margin: 10px 0; /* Fügt einen vertikalen Abstand zwischen Absätzen hinzu */
+}
+a {
+    color: #b99b7b; /* Setzt die Linkfarbe */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+}
+a:hover {
+    text-decoration: underline; /* Fügt eine Unterstreichung bei Hover hinzu */
+}
+body {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    line-height: 1.6; /* Erhöht den Zeilenabstand für bessere Lesbarkeit */
+    margin: 20px;
+}
+
+.navbar .nav-link {
+    color: var(--font-color) !important; /* Schriftfarbe der Navbar-Links */
+}
+
+.navbar .nav-link:hover {
+    color: var(--dark-color) !important; /* Schriftfarbe beim Hover */
+}
+
+.navbar-brand {
+    color: var(--font-color) !important; /* Schriftfarbe der Navbar-Brand */
+}
+
+/* Animationen für den Fade-In Effekt */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Beginnt leicht nach unten */
+    transition: opacity 6s ease, transform 3s ease;
+}
+
+.fade-in.active {
+    opacity: 1; /* Korrigiert den Opacity-Wert von 3 auf 1 */
+    transform: translateY(0); /* Endposition */
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px); /* Beginnt von der rechten Seite */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Endposition */
+    }
+}

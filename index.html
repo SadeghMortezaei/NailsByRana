@@ -5,271 +5,544 @@
     <meta http-equive="X-UA-Compatible" content="IE=edge";>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nails By Rana</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/style.css"> <!-- Hier wird die CSS-Datei eingebettet -->
+
+
+     <style>
+        :root {
+            --primary-color: #ffffff; /* Hintergrundfarbe */
+            --secondary-color: #cfc5bb; /* Dunklerer Beigeton */
+            --danger-color: #d8b2b2; /* Gefahrenfarbe */
+            --light-color: #f9f9f9; /* Helle Farbe */
+            --dark-color: #5a4e42; /* Dunkles Braun */
+            --font-color: #3c3c3c; /* Schriftfarbe */
+        }
+
+         h3 {
+                    margin-bottom: 10px; /* Fügt einen Abstand unter der Überschrift hinzu */
+                }
+                p {
+                    margin: 10px 0; /* Fügt einen vertikalen Abstand zwischen Absätzen hinzu */
+                }
+                a {
+                    color: #b99b7b; /* Setzt die Linkfarbe */
+                    text-decoration: none; /* Entfernt die Unterstreichung */
+                }
+                a:hover {
+                    text-decoration: underline; /* Fügt eine Unterstreichung bei Hover hinzu */
+                }
+        body {
+            background-color: var(--primary-color);
+            color: var(--font-color);
+            line-height: 1.6; /* Erhöht den Zeilenabstand für bessere Lesbarkeit */
+            margin: 20px;
+        }
+
+        .navbar .nav-link {
+            color: var(--font-color) !important; /* Schriftfarbe der Navbar-Links */
+        }
+
+        .navbar .nav-link:hover {
+            color: var(--dark-color) !important; /* Schriftfarbe beim Hover */
+        }
+    
+        .navbar-brand {
+            color: var(--font-color) !important; /* Schriftfarbe der Navbar-Brand */
+        }
+        
+    </style>
 </head>
 <body>
-    <section class="header">
-        <a href="#" class="logo">
-            <img src="" alt="" class="logo-image">
-            Nails By Rana
-        </a>
 
 
-        <nav class="navbar">
-            <!-- <div id="close-navbar" class="fas fa-times"></div> -->
 
-            <a href="#home">Startseite</a>
-            <a href="#about">Über uns</a>
-            <!-- <a href="#services">Dienstleistungen</a> -->
-            <a href="#pricing">Preisliste</a>
-            <a href="#blogs">Blogs</a>
-            <a href="#review">Reviews</a> 
-            <a href="#kontakt">Kontakt</a>
-        </nav>
+<nav class="navbar" style="background-color: #ece4d7;">
+<nav class="navbar navbar-expand-lg bg-body-tertiary>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Nails By Rana</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Startseite</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Über uns</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Instagram</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing">Preisliste</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#blogs">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#review">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#kontakt">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</nav>
 
-        <div id="menu-btn" class="fas fa-bars"></div>
-    </section>
     
 <!--home-->
-        <section class="home" id="home">   
-            <div class="content">   
-                <span>Willkommen</span>
-                <h3>wir machen<br>Nägel schön <br> und einzigartig    </h3>
-            </div>
-        </section>
 
-<!--Über uns-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nageldesign</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Animationen für den Fade-In Effekt */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px); /* Beginnt leicht nach unten */
+            transition: opacity 6s ease, transform 3s ease;
+        }
 
-<section class="about" id="about">   
-    <h1 class="heading">Über uns</h1> 
-    
-    <div class="row">
-        <div class="image">   
-            <img src="images/aboutUsRana.jpeg" alt="">
-        </div>
+        .fade-in.active {
+            opacity: 3;
+            transform: translateY(0); /* Endposition */
+        }
 
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(20px); /* Beginnt von der rechten Seite */
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0); /* Endposition */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="home d-flex justify-content-center align-items-center text-center" id="home" style="background-color: #ffffff; height: 100vh;">
+    <div class="container">
         <div class="content">
-            <h3 class="title">Rana – Ihre Expertin für Nageldesign</h3>
-            <p>ich bin Rana und seit mehr als zehn Jahren leidenschaftlich im Bereich Nageldesign tätig. Was als Hobby begann, hat sich zu einer professionellen Karriere entwickelt, die mir unendlich viel Freude bereitet. Meine Arbeit ist nicht nur ein Job, sondern eine echte Berufung, und ich liebe es, meine Kreativität und mein Können in jedem einzelnen Design auszudrücken.</p>
-            <p>Jeder Nagel ist für mich eine Leinwand, auf der ich meine künstlerische Vision umsetze. Ich sehe jedes Design als eine einzigartige Kreation, die die Persönlichkeit und den Stil meiner Kundinnen und Kunden widerspiegelt. Von klassisch-elegant bis hin zu extravagant und auffällig – meine Mission ist es, für jede Person das perfekte Nageldesign zu finden. Dabei lege ich großen Wert auf Qualität und Präzision, um Ergebnisse zu erzielen, die nicht nur schön aussehen, sondern auch lange halten.</p>
-            <p>Abseits meiner beruflichen Tätigkeit bin ich eine begeisterte Kunstliebhaberin und reise gerne, um neue Inspirationen zu sammeln. Jede Reise und jede neue Begegnung bereichern meine Arbeit und fließen in meine Designs ein. Ich freue mich darauf, auch Ihnen meine Leidenschaft und Kreativität im Nageldesign näherzubringen und Sie in meinem Studio willkommen zu heißen.</p>
-
-            <div class="icon-container">
-
-                <div class="icons">   
-                    <img src="images/NailCare.png" alt="">
-                    <h3>Pflege</h3>
-                </div>
-                <div class="icons">   
-                    <img src="images/NailRepair.png" alt="">
-                    <h3>Reparatur</h3>
-                </div>
-                <div class="icons">   
-                    <img src="images/NailDesign.png" alt="">
-                    <h3>Design</h3>
-                </div>
-
-
-            </div>
-
+            <span class="d-block mb-3 fade-in">Willkommen</span>
+            <h1 class="display-3 fw-bold text-dark mb-4 fade-in">Wir machen<br>Nägel schön<br>und einzigartig</h1>
         </div>
     </div>
 </section>
 
 
-<!-- Dienstleistungen-->
 
-<section class="services">
-    <div class="carousel">
-        <button class="carousel-control prev" onclick="moveCarousel(-1)">‹</button>
-        <div class="box-container carousel-container">
-            <div class="carousel-track">
-                <!-- Hier die 8 Fotos einfügen -->
-                <div class="box"><img src="foto1.jpg" alt="Foto 1"></div>
-                <div class="box"><img src="foto2.jpg" alt="Foto 2"></div>
-                <div class="box"><img src="foto3.jpg" alt="Foto 3"></div>
-                <div class="box"><img src="foto4.jpg" alt="Foto 4"></div>
-                <div class="box"><img src="foto5.jpg" alt="Foto 5"></div>
-                <div class="box"><img src="foto6.jpg" alt="Foto 6"></div>
-                <div class="box"><img src="foto7.jpg" alt="Foto 7"></div>
-                <div class="box"><img src="foto8.jpg" alt="Foto 8"></div>
+
+
+
+<section class="about py-5" id="about">
+    <div class="container">
+        <h1 class="heading text-center mb-5 fade-in">Über uns</h1>
+        <div class="row align-items-center">
+            <!-- Bild auf der linken Seite -->
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div class="image">
+                    <img src="images/aboutUsRana.jpeg" class="img-fluid rounded fade-in" alt="Rana - Nageldesign Expertin">
+                </div>
+            </div>
+
+            <!-- Text auf der rechten Seite -->
+            <div class="col-lg-6 col-md-12">
+                <div class="content">
+                    <h3 class="title fade-in">Rana – Ihre Expertin für Nageldesign</h3>
+                    <p class="fade-in">Ich bin Rana und seit mehr als zehn Jahren leidenschaftlich im Bereich Nageldesign tätig. Was als Hobby begann, hat sich zu einer professionellen Karriere entwickelt, die mir unendlich viel Freude bereitet. Meine Arbeit ist nicht nur ein Job, sondern eine echte Berufung, und ich liebe es, meine Kreativität und mein Können in jedem einzelnen Design auszudrücken.</p>
+                    <p class="fade-in">Jeder Nagel ist für mich eine Leinwand, auf der ich meine künstlerische Vision umsetze. Ich sehe jedes Design als eine einzigartige Kreation, die die Persönlichkeit und den Stil meiner Kundinnen und Kunden widerspiegelt. Von klassisch-elegant bis hin zu extravagant und auffällig – meine Mission ist es, für jede Person das perfekte Nageldesign zu finden. Dabei lege ich großen Wert auf Qualität und Präzision, um Ergebnisse zu erzielen, die nicht nur schön aussehen, sondern auch lange halten.</p>
+                    <p class="fade-in">Abseits meiner beruflichen Tätigkeit bin ich eine begeisterte Kunstliebhaberin und reise gerne, um neue Inspirationen zu sammeln. Jede Reise und jede neue Begegnung bereichern meine Arbeit und fließen in meine Designs ein. Ich freue mich darauf, auch Ihnen meine Leidenschaft und Kreativität im Nageldesign näherzubringen und Sie in meinem Studio willkommen zu heißen.</p>
+
+                    <!-- Dynamische Bildsektion -->
+                    <div class="row mt-4">
+                        <div class="col-md-4 text-center">
+                            <img src="images/NailCare.png" class="img-fluid mb-2 fade-in" alt="Nagelpflege">
+                            <h3 class="fade-in">Pflege</h3>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img src="images/NailRepair.png" class="img-fluid mb-2 fade-in" alt="Nagelreparatur">
+                            <h3 class="fade-in">Reparatur</h3>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img src="images/NailDesign.png" class="img-fluid mb-2 fade-in" alt="Nageldesign">
+                            <h3 class="fade-in">Design</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <button class="carousel-control next" onclick="moveCarousel(1)">›</button>
     </div>
 </section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Intersection Observer API
+    const fadeIns = document.querySelectorAll('.fade-in');
+
+    const observerOptions = {
+        root: null, // Beobachtet den Viewport
+        rootMargin: '0px',
+        threshold: 0.1 // 10% des Elements sichtbar
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active'); // Füge die Klasse hinzu, um die Animation zu starten
+                observer.unobserve(entry.target); // Stoppe das Beobachten, nachdem es einmal aktiviert wurde
+            }
+        });
+    }, observerOptions);
+
+    fadeIns.forEach(element => {
+        observer.observe(element); // Beobachte jedes Element mit der Klasse .fade-in
+    });
+</script>
+
+
+
+
+
+
+
  
-<!--Pricing-->
 
-<section class="pricing" id="pricing">
-        <div class="box"> 
-            <img src="images/PriceList.jpeg" alt="">
-        </div>
-</section>
+
 
 
 <!--Blogs-->
 
 <section class="blogs" id="blogs">
-    <h1 class="heading">Blogs</h1>
-    <div class="box-container">
-        <div class="box">
-            <div class="image">
-                <img src="images/FirstDay.jpeg" alt="">
+    <h1 class="heading text-center fade-in">Unsere Neuigkeiten</h1>
+    <div class="container">
+        <div class="row" id="blog-container">
+
+            <div class="col-md-4 mb-4">
+                <div class="card fade-in" style="height: 100%;">
+                    <img src="images/FirstDay.jpeg" class="card-img-top" alt="Eröffnung meines Nagelstudios">
+                    <div class="card-body">
+                        <h5 class="card-title">Eröffnung meines Nagelstudios – Ein herzliches Dankeschön</h5>
+                        <span class="text-muted">06.01.2024</span>
+                        <p class="card-text">Am 6. Januar 2024 durfte ich endlich die Türen meines eigenen Nagelstudios öffnen...</p>
+                        <button class="btn btn-primary custom-button" onclick="toggleContent('content1')">Mehr lesen</button>
+                        <div id="content1" class="extra-content" style="display: none;">
+                            <p>Ich möchte mich herzlich bei allen bedanken, die an diesem Tag dabei waren und ihn durch ihre Anwesenheit, die vielen Blumen und Geschenke so unvergesslich gemacht haben.<br>Ein besonderer Dank gilt meinen treuen Kundinnen, Freunden und Familie, deren Unterstützung mir geholfen hat, meinen Traum zu verwirklichen. Eure kontinuierliche Unterstützung und euer Vertrauen sind die Grundlage meines Erfolgs. Ich freue mich darauf, euch in meinem Studio willkommen zu heißen und gemeinsam viele schöne Momente zu erleben.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="content">
-                <a class="title">Eröffnung meines Nagelstudios – Ein herzliches Dankeschön</a>
-                <span>06.01.2024</span>
-                <p>Am 6. Januar 2024 durfte ich endlich die Türen meines eigenen Nagelstudios öffnen und diesen besonderen Moment mit vielen wunderbaren Menschen teilen. Ich möchte mich herzlich bei allen bedanken, die an diesem Tag dabei waren und ihn durch ihre Anwesenheit, die vielen Blumen und Geschenke so unvergesslich gemacht haben.</p>
-                <p>Ein besonderer Dank gilt meinen treuen Kundinnen, Freunden und Familie, deren Unterstützung mir geholfen hat, meinen Traum zu verwirklichen. Eure kontinuierliche Unterstützung und euer Vertrauen sind die Grundlage meines Erfolgs. Ich freue mich darauf, euch in meinem Studio willkommen zu heißen und gemeinsam viele schöne Momente zu erleben.</p>
-               
+
+            <div class="col-md-4 mb-4">
+                <div class="card fade-in" style="height: 100%;">
+                    <img src="images/FirstDay.jpeg" class="card-img-top" alt="Ein weiterer aufregender Tag">
+                    <div class="card-body">
+                        <h5 class="card-title">Ein weiterer aufregender Tag</h5>
+                        <span class="text-muted">07.01.2024</span>
+                        <p class="card-text">Am 7. Januar hatte ich die Möglichkeit, viele neue Kunden zu begrüßen...</p>
+                        <button class="btn btn-primary custom-button" onclick="toggleContent('content2')">Mehr lesen</button>
+                        <div id="content2" class="extra-content" style="display: none;">
+                            <p>Es war ein aufregender Tag voller schöner Erlebnisse.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card fade-in" style="height: 100%;">
+                    <img src="images/Foto6.jpeg" class="card-img-top" alt="Besondere Angebote für unsere Kunden">
+                    <div class="card-body">
+                        <h5 class="card-title">5 Tipps und Tricks, um gesunde Nägel zu bekommen</h5>
+                        <span class="text-muted">29.09.2024</span>
+                        <p class="card-text"><strong>1. Gesunde Ernährung</strong>
+                            Iss biotinreiche Lebensmittel (Eier, Nüsse, Avocado) sowie zink- und eisenhaltige Produkte, um das Nagelwachstum zu fördern.
+                            <br><strong>2. Feuchtigkeitspflege</strong>
+                            Täglich Nagelöl oder feuchtigkeitsspendende Handcreme auftragen, um trockene und brüchige Nägel zu vermeiden.</p>
+                        <button class="btn btn-primary custom-button" onclick="toggleContent('content3')">Mehr lesen</button>
+                        <div id="content3" class="extra-content" style="display: none;">
+                            <br><strong>3. Schutz</strong>
+                            Trage Handschuhe beim Putzen und vermeide es, Nägel als Werkzeug zu benutzen, um Brüche zu verhindern. Benutze bitte nie deine Nägel, um Cola-Dosen zu öffnen.
+                            <br><strong>4. Sanfte Nagelpflege</strong>
+                            Nägel regelmäßig schneiden und in eine Richtung feilen. Nagelhaut vorsichtig zurückschieben, nicht schneiden.
+                            <br><strong>5. Schonende Produkte</strong>
+                            Nutze acetonfreien Nagellackentferner und gönne deinen Nägeln Pausen vom Nagellack.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/FirstDay.jpeg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Eröffnung meines Nagelstudios – Ein herzliches Dankeschön</a>
-                <span>06.01.2024</span>
-                <p>Am 6. Januar 2024 durfte ich endlich die Türen meines eigenen Nagelstudios öffnen und diesen besonderen Moment mit vielen wunderbaren Menschen teilen. Ich möchte mich herzlich bei allen bedanken, die an diesem Tag dabei waren und ihn durch ihre Anwesenheit, die vielen Blumen und Geschenke so unvergesslich gemacht haben.</p>
-                <p>Ein besonderer Dank gilt meinen treuen Kundinnen, Freunden und Familie, deren Unterstützung mir geholfen hat, meinen Traum zu verwirklichen. Eure kontinuierliche Unterstützung und euer Vertrauen sind die Grundlage meines Erfolgs. Ich freue mich darauf, euch in meinem Studio willkommen zu heißen und gemeinsam viele schöne Momente zu erleben.</p>
-          
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/FirstDay.jpeg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Eröffnung meines Nagelstudios – Ein herzliches Dankeschön</a>
-                <span>06.01.2024</span>
-                <p>Am 6. Januar 2024 durfte ich endlich die Türen meines eigenen Nagelstudios öffnen und diesen besonderen Moment mit vielen wunderbaren Menschen teilen. Ich möchte mich herzlich bei allen bedanken, die an diesem Tag dabei waren und ihn durch ihre Anwesenheit, die vielen Blumen und Geschenke so unvergesslich gemacht haben.</p>
-                <p>Ein besonderer Dank gilt meinen treuen Kundinnen, Freunden und Familie, deren Unterstützung mir geholfen hat, meinen Traum zu verwirklichen. Eure kontinuierliche Unterstützung und euer Vertrauen sind die Grundlage meines Erfolgs. Ich freue mich darauf, euch in meinem Studio willkommen zu heißen und gemeinsam viele schöne Momente zu erleben.</p>
-                
-            </div>
-        </div>
-    </div>
-
-
-</section>
-
-
-<!--Review-->
-
-<section class="review" id="review">
-
-    <h1 class="heading">Reviews</h1>
-    <div class="box-container">
-        <div class="box">
-            <img src="images/Quote.png" alt="" class="quote">
-            <p>Ich war Kundin bei der lieben Rana bevor sie sich selbstständig gemacht hat und ich war immer mega zufrieden. Jetzt hat sie ihr hübsches kleines eigenes Studio 💯
-                Sie ist auch ein ganz besonders lieber Mensch und ihre Fähigkeiten sind einfach super Klasse 👍🏼👍🏼💖💖</p>
-            <img src="images/Reviewer.png" alt="Erika Rotärmel" class="reviewer">
-            <h3>Erika Rotärmel</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/Quote.png" alt="" class="quote">
-            <p>Rana ist die allerbeste. Sie arbeitet mit unendlich viel Leidenschaft und Liebe zum Detail.
-                . Ich bin sehr glücklich, das ich Sie gefunden  habe!Immer nur Rana. Sie macht die wunderschönsten Nägel.</p>
-            <img src="images/Reviewer.png" alt="Silke Bussang" class="reviewer">
-            <h3>Silke Bussang</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/Quote.png" alt="" class="quote">
-            <p>Ich bin von Rana menschlich, aber vor allem beruflich, sehr begeistert. Sie weiß immer genau, wie ich meine Nägel haben möchte, und ich bin immer zu 100% zufrieden👍deshalb bin ich auch schon ein paar Mal mit ihr 'umgezogen". Aber mit ihrem tollen, eigenen Laden hat sie sich jetzt ihren Traum erfüllt. Super!!! Total empfehlenswert💕 </p>
-            <img src="images/Reviewer.png" alt="Sandra Hellmuth" class="reviewer">
-            <h3>Sandra Hellmuth</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-        </div>
-
     </div>
 </section>
 
-<section class="kontakt" id="kontakt">
-        <div class="box-container">
-            <div class="box">
-                <h3>Nails By Rana</h3>
-                <br><p><a href="https://www.google.com/maps/search/?api=1&query=Wilhelmsh%C3%B6he+Allee+180%2C+34119+Kassel" target="_blank">Wilhelmshöhe Allee 180, <br>34119 Kassel</a></p>
-                <br><p>Tel: <a href="https://api.whatsapp.com/send?phone=491723211519">+49 172 321 15 19</a></p>
-                <br><p>E-Mail: <a href="mailto:info@nailsbyrana.de">info@nailsbyrana.de</a></p>
+<style>
+    .custom-button {
+        background-color: #d7c7ae; /* Farbe für den Button */
+        border-color: #d7c7ae; /* Farbe des Rahmens */
+    }
+
+    .extra-content {
+        transition: opacity 0.5s ease; /* Sanfter Übergang */
+        opacity: 0; /* Beginnt unsichtbar */
+        display: none; /* Standardmäßig nicht angezeigt */
+    }
+
+    .extra-content.active {
+        display: block; /* Inhalt anzeigen, wenn aktiv */
+        opacity: 1; /* Voll sichtbar */
+    }
+
+    /* Animationen für den Fade-In Effekt */
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px); /* Beginnt leicht nach unten */
+        transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0); /* Endposition */
+    }
+
+</style>
+
+<script>
+    function toggleContent(contentId) {
+        const content = document.getElementById(contentId);
+        if (content.style.display === "none") {
+            content.style.display = "block";
+            setTimeout(() => {
+                content.classList.add('active'); // Klasse aktiv hinzufügen
+            }, 0);
+        } else {
+            content.classList.remove('active'); // Klasse entfernen
+            setTimeout(() => {
+                content.style.display = "none"; // Verstecken nach dem Verblassen
+            }, 500); // Zeit, um das Verblassen abzuschließen
+        }
+    }
+
+    // Fade-In Effekt für die Blogkarten
+    window.addEventListener('scroll', function() {
+        const fadeIns = document.querySelectorAll('.fade-in');
+        fadeIns.forEach((fadeIn) => {
+            const rect = fadeIn.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                fadeIn.classList.add('visible');
+            }
+        });
+    });
+</script>
+
+
+
+
+
+<!-- gallery-->
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <title>Instagram Galerie</title>
+</head>
+<body>
+
+<section id="gallery" class="container my-5">
+    <h1 class="heading text-center mb-4">Instagram-Posts</h1>
+    <div class="row">
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C-znJeXtIj8/" data-instgrm-version="12" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; padding:0; width:100%; max-width:540px;">
+                    <div style="padding:16px;">
+                        <a id="main_link" href="https://www.instagram.com/reel/C-znJeXtIj8/" style="background:#FFFFFF; line-height:0; padding:0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                            <div style="display:flex; flex-direction:row; align-items:center;">
+                                <div style="background-color:#F4F4F4; border-radius:50%; height:40px; margin-right:14px; width:40px;"></div>
+                                <div style="display:flex; flex-direction:column; flex-grow:1; justify-content:center;">
+                                    <div style="background-color:#F4F4F4; border-radius:4px; height:14px; margin-bottom:6px; width:100px;"></div>
+                                    <div style="background-color:#F4F4F4; border-radius:4px; height:14px; width:60px;"></div>
+                                </div>
+                            </div>
+                            <div style="padding:19% 0;"></div>
+                            <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                                <svg width="50px" height="50px" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="#000000"><path d="M..."></path></g></svg>
+                            </div>
+                            <div style="padding-top:8px;">
+                                <div style="color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-weight:550; line-height:18px;">View this post on Instagram</div>
+                            </div>
+                            <div style="padding:12.5% 0;"></div>
+                        </a>
+                    </div>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C4VV_88NnVy/" data-instgrm-version="12" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; padding:0; width:100%; max-width:540px;">
+                    <div style="padding:16px;">
+                        <a id="main_link" href="https://www.instagram.com/reel/C4VV_88NnVy/" style="background:#FFFFFF; line-height:0; padding:0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                            <div style="display:flex; flex-direction:row; align-items:center;">
+                                <div style="background-color:#F4F4F4; border-radius:50%; height:40px; margin-right:14px; width:40px;"></div>
+                                <div style="display:flex; flex-direction:column; flex-grow:1; justify-content:center;">
+                                    <div style="background-color:#F4F4F4; border-radius:4px; height:14px; margin-bottom:6px; width:100px;"></div>
+                                    <div style="background-color:#F4F4F4; border-radius:4px; height:14px; width:60px;"></div>
+                                </div>
+                            </div>
+                            <div style="padding:19% 0;"></div>
+                            <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                                <svg width="50px" height="50px" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="#000000"><path d="M..."></path></g></svg>
+                            </div>
+                            <div style="padding-top:8px;">
+                                <div style="color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-weight:550; line-height:18px;">View this post on Instagram</div>
+                            </div>
+                            <div style="padding:12.5% 0;"></div>
+                        </a>
+                    </div>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C5gvg-5r-Sm/" data-instgrm-version="12" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; padding:0; width:100%; max-width:540px;">
+                    <div style="padding:16px;">
+                        <a id="main_link" href="https://www.instagram.com/reel/C5gvg-5r-Sm/" style="background:#FFFFFF; line-height:0; padding:0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                            <div style="display:flex; flex-direction:row; align-items:center;">
+                                <div style="background-color:#F4F4F4; border-radius:50%; height:40px; margin-right:14px; width:40px;"></div>
+                                <div style="display:flex; flex-direction:column; flex-grow:1; justify-content:center;">
+                                    <div style="background-color:#F4F4F4; border-radius:4px; height:14px; margin-bottom:6px; width:100px;"></div>
+                                    <div style="background-color:#F4F4F4; border-radius:4px; height:14px; width:60px;"></div>
+                                </div>
+                            </div>
+                            <div style="padding:19% 0;"></div>
+                            <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                                <svg width="50px" height="50px" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="#000000"><path d="M..."></path></g></svg>
+                            </div>
+                            <div style="padding-top:8px;">
+                                <div style="color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-weight:550; line-height:18px;">View this post on Instagram</div>
+                            </div>
+                            <div style="padding:12.5% 0;"></div>
+                        </a>
+                    </div>
+                </blockquote>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script async src="https://www.instagram.com/embed.js"></script>
+
+
+
+
+
+<section class="kontakt py-5" id="kontakt">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4 d-flex">
+                <div class="box p-3 border rounded shadow flex-fill">
+                     <h3>Nails By Rana</h3>
+    <p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Wilhelmsh%C3%B6he+Allee+180%2C+34119+Kassel" target="_blank">
+            Wilhelmshöhe Allee 180,<br>34119 Kassel
+        </a>
+    </p>
+    <p>
+        <a href="https://api.whatsapp.com/send?phone=491723211519">WhatsApp</a><br>
+        E-Mail: <a href="mailto:info@nailsbyrana.de">info@nailsbyrana.de</a>
+    </p>
+    <p>
+        Tel: <a href="tel:+491723211519">+49 172 321 15 19</a>
+    </p>
+                </div>
             </div>
 
-            <div class="box">
-                <h3>Öffnungszeiten</h3>
-                    <table class="openTime">
-                        <br></tr>
-                        <tr><td>Mo</td><td>09:00 - 15:00</td>
-                        </tr>
-                        <tr><td>Di</td><td>09:00 - 15:00</td>
-                        </tr>
-                        <tr><td>Mi</td><td>09:00 - 15:00</td>
-                        </tr>
-                        <tr><td>Do</td><td>09:00 - 15:00</td>
-                        </tr>
-                        <tr><td>Fr</td><td>09:00 - 15:00</td>
-                        </tr>
-                        <tr><td>Sa</td><td>09:00 - 15:00</td>
-                        </tr>
-                        <tr><td>So</td><td>geschlossen</td>
-                        </tr>
+            <div class="col-md-4 mb-4 d-flex">
+                <div class="box p-3 border rounded shadow flex-fill">
+                    <h3>Öffnungszeiten</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr><td>Mo</td><td>09:00 - 15:00</td></tr>
+                            <tr><td>Di</td><td>09:00 - 15:00</td></tr>
+                            <tr><td>Mi</td><td>09:00 - 15:00</td></tr>
+                            <tr><td>Do</td><td>09:00 - 15:00</td></tr>
+                            <tr><td>Fr</td><td>09:00 - 15:00</td></tr>
+                            <tr><td>Sa</td><td>09:00 - 15:00</td></tr>
+                            <tr><td>So</td><td>geschlossen</td></tr>
+                        </tbody>
                     </table>
+                </div>
             </div>
 
-            <div class="box">
-                <h3>Navigation</h3><br>
-                    <a href="#home">Startseite</a><br>
-                    <a href="#about">Über uns</a><br>
-                    <a href="#services">Dienstleistungen</a><br>
-                    <a href="#pricing">Preisliste</a><br>
-                    <a href="#blogs">Blogs</a><br>
-                    <a href="#review">Reviews</a>
+            <div class="col-md-4 mb-4 d-flex">
+                <div class="box p-3 border rounded shadow flex-fill">
+                    <h3>Navigation</h3>
+                    <a href="#home" class="d-block">Startseite</a>
+                    <a href="#about" class="d-block">Über uns</a>
+                    <a href="#services" class="d-block">gallery</a>
+                    <a href="#pricing" class="d-block">Preisliste</a>
+                    <a href="#blogs" class="d-block">Blogs</a>
+                    <a href="#review" class="d-block">Reviews</a>
+                </div>
             </div>
         </div>
-</section>
-
-<section class="map">
-    <div class="box" >
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4987.878803486815!2d9.455717875640886!3d51.312239184448345!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bb3fe8b6530873%3A0x586803d21029ce8f!2sNails%20by%20Rana!5e0!3m2!1sde!2sde!4v1718136110116!5m2!1sde!2sde"" frameborder="0"></iframe>
     </div>
 </section>
 
-<section class="footer">
-    <div>
-        <footer>
-            <p class="copyRight">© 2024 <a href="#home" style="display:inline-block;">NailsByRana</a>. Alle Rechte vorbehalten.</p>
-            <p class="publisher">Disigned by <a style="display:inline-block;">Armin</a></p> 
-            <p class="impressum"> <a href="impressum/impressum.pdf" style="display:inline-block;">impressum</a></p>
+
+
+<section class="map py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="box border rounded shadow">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4987.878803486815!2d9.455717875640886!3d51.312239184448345!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bb3fe8b6530873%3A0x586803d21029ce8f!2sNails%20by%20Rana!5e0!3m2!1sde!2sde!4v1718136110116!5m2!1sde!2sde" 
+            frameborder="0" 
+            style="width: 100%; height: 400px; border: 0;" 
+            allowfullscreen 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<section class="footer py-4 bg-light">
+    <div class="container text-center">
+        <footer class="border-top pt-3">
+            <p class="copyRight mb-1">© 2024 <a href="#home" class="text-dark">Nails By Rana</a>. Alle Rechte vorbehalten.</p>
+            <p class="publisher mb-1">Designed by <a href="https://github.com/SadeghMortezaei" class="text-dark">Armin</a></p> 
+            <p class="impressum mb-0"><a href="impressum/impressum.pdf" class="text-dark">Impressum</a></p>
         </footer>
     </div>
 </section>
 
-
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
